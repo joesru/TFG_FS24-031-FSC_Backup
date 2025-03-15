@@ -16,3 +16,9 @@ copy /Y auxiliares\TFG_FS24-031-FSC_MAIN.pdf TFG_FS24-031-FSC_MAIN.pdf
 
 rem Copiar el PDF a la carpeta "PDF" renombrándolo con fecha y hora
 copy /Y auxiliares\TFG_FS24-031-FSC_MAIN.pdf PDF\TFG_FS24-031-FSC_MAIN_%datetime%.pdf
+
+rem Guardar cambios en GitHub automáticamente
+cd /d "%~dp0"  rem Ir a la carpeta del script
+git add .
+git commit -m "Backup automático"
+git push origin main
