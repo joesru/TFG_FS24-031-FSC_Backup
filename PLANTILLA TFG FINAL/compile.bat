@@ -21,7 +21,7 @@ copy /Y "auxiliares\TFG_FS24-031-FSC_MAIN.pdf" "TFG_FS24-031-FSC_MAIN.pdf"
 copy /Y "auxiliares\TFG_FS24-031-FSC_MAIN.pdf" "PDF\TFG_FS24-031-FSC_MAIN_%datetime%.pdf"
 
 rem ==============================
-rem  Gestionar Historial de .tex
+rem  Gestionar Historial de .tex y .sty
 rem ==============================
 
 rem Asegurar que la carpeta Historial existe
@@ -41,26 +41,30 @@ rem Crear la nueva carpeta "1" para la ultima version
 if not exist "1" mkdir "1"
 
 rem ==============================
-rem  Verificar si hay archivos .tex antes de copiarlos
+rem  Verificar si hay archivos .tex y .sty antes de copiarlos
 rem ==============================
-echo Buscando archivos .tex en "%TEX_SOURCE%"...
-dir "%TEX_SOURCE%\*.tex"
+echo Buscando archivos .tex y .sty en "%TEX_SOURCE%"...
+dir "%TEX_SOURCE%\*.tex" /B
+dir "%TEX_SOURCE%\*.sty" /B
 
-rem Si no hay archivos .tex, mostrar error y salir
-if not exist "%TEX_SOURCE%\*.tex" (
-    echo ERROR: No se encontraron archivos .tex en "%TEX_SOURCE%".
+rem Si no hay archivos .tex o .sty, mostrar error y salir
+if not exist "%TEX_SOURCE%\*.tex" if not exist "%TEX_SOURCE%\*.sty" (
+    echo ERROR: No se encontraron archivos .tex ni .sty en "%TEX_SOURCE%".
     pause
     exit /b
 )
 
 rem ==============================
-rem  Copiar archivos .tex a Historial
+rem  Copiar archivos .tex y .sty a Historial\1
 rem ==============================
-echo Copiando archivos .tex a Historial\1...
+echo Copiando archivos .tex y .sty a Historial\1...
 xcopy "%TEX_SOURCE%\*.tex" "1\" /Y /E /C /H /R /I
+xcopy "%TEX_SOURCE%\*.sty" "1\" /Y /E /C /H /R /I
+
 if %errorlevel% neq 0 (
-    echo ERROR: No se pudieron copiar los archivos .tex con xcopy. Intentando con copy...
-    copy /Y "%TEX_SOURCE%\*.tex" "1\"
+    echo ERROR: No se pudieron copiar los archivos con xcopy. Intentando con copy...
+    for %%f in ("%TEX_SOURCE%\*.tex") do copy /Y "%%f" "1\"
+    for %%f in ("%TEX_SOURCE%\*.sty") do copy /Y "%%f" "1\"
 )
 
 rem ==============================
