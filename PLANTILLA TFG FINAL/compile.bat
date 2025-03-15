@@ -12,7 +12,7 @@ rem Obtener la fecha y hora actual en formato YYYY_MM_DD_HH-mm
 for /f "tokens=2 delims==." %%I in ('wmic os get localdatetime /value ^| find "="') do set datetime=%%I
 set datetime=%datetime:~0,4%_%datetime:~4,2%_%datetime:~6,2%-%datetime:~8,2%-%datetime:~10,2%
 
-rem Compilar el documento LaTeX
+rem Compilar el documento LaTeX desde la carpeta correcta
 pdflatex -interaction=nonstopmode -output-directory="auxiliares" "%TEX_SOURCE%\TFG_FS24-031-FSC_MAIN.tex"
 
 rem Copiar el PDF a la carpeta principal y a la carpeta PDF con la fecha y hora
@@ -23,7 +23,7 @@ rem ==============================
 rem  Gestionar Historial de .tex
 rem ==============================
 
-rem Crear la carpeta Historial si no existe
+rem Asegurar que la carpeta Historial existe antes de usarla
 if not exist "Historial" mkdir "Historial"
 
 rem Moverse a la carpeta Historial

@@ -1,0 +1,32 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Compilar y renombrar PDF",
+        "type": "shell",
+        "command": "cmd.exe",
+        "args": [
+          "/c",
+          "\"D:\\00000000.- REDACCION TFG\\compile.bat\""
+        ],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "presentation": {
+          "reveal": "always"
+        }
+      },
+      {
+        "label": "Compilar con batch",
+        "type": "shell",
+        "command": "cmd.exe",
+        "args": [
+          "/c",
+          "\"D:\\00000000.- REDACCION TFG\\PLANTILLA TFG FINAL\\compile.bat\""
+        ],
+        "problemMatcher": []
+      }
+    ]
+  }
+  
