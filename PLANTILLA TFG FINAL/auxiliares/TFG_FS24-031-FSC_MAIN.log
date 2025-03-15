@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.3.7)  15 MAR 2025 18:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.3.7)  15 MAR 2025 18:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**"D:/00000000.- REDACCION TFG/PLANTILLA TFG FINAL/TFG_FS24-031-FSC_MAIN.tex"
-(D:/00000000.- REDACCION TFG/PLANTILLA TFG FINAL/TFG_FS24-031-FSC_MAIN.tex
+**./TFG_FS24-031-FSC_MAIN.tex
+(TFG_FS24-031-FSC_MAIN.tex
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
 (C:\Users\josee\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
@@ -1453,13 +1453,13 @@ Package rerunfilecheck Info: File `TFG_FS24-031-FSC_MAIN.out' has not changed.
 (rerunfilecheck)             Checksum: 72B9C107D259907BB8F41FF9D67EEF27;2124.
  ) 
 Here is how much of TeX's memory you used:
- 31747 strings out of 473644
- 584978 string characters out of 5717516
+ 31745 strings out of 473644
+ 584830 string characters out of 5717516
  1078164 words of memory out of 5000000
  54172 multiletter control sequences out of 15000+600000
  575255 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,12n,96p,1097b,524s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,12n,96p,1049b,524s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/josee/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfb
 x1200.pfb><C:/Users/josee/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-s
 uper/sfbx1440.pfb><C:/Users/josee/AppData/Local/Programs/MiKTeX/fonts/type1/pub
@@ -1474,7 +1474,7 @@ sers/josee/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfxc1200.p
 fb><C:/Users/josee/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sf
 xc1440.pfb>
 Output written on "D:\00000000.- REDACCION TFG\PLANTILLA TFG FINAL\auxiliares\T
-FG_FS24-031-FSC_MAIN.pdf" (6 pages, 260696 bytes).
+FG_FS24-031-FSC_MAIN.pdf" (6 pages, 260870 bytes).
 PDF statistics:
  180 PDF objects out of 1000 (max. 8388607)
  18 named destinations out of 1000 (max. 500000)
