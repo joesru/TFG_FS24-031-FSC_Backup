@@ -1,29 +1,18 @@
 ﻿@echo off
-rem Definir rutas absolutas (ENCERRADAS ENTRE COMILLAS DOBLES)
-set "TEX_SOURCE=C:\Users\josee\OneDrive - Universidad de Cordoba\FISICA\4º DE FISICA\2.- CURSO 2024-25 - UCO\TFG\00.- REDACCION TFG\PLANTILLA TFG FINAL"
-set "HISTORIAL_FOLDER=C:\Users\josee\OneDrive - Universidad de Cordoba\FISICA\4º DE FISICA\2.- CURSO 2024-25 - UCO\TFG\00.- REDACCION TFG\Historial"
+rem Definir rutas absolutas en la nueva ubicacion
+set "TEX_SOURCE=D:\00000000.- REDACCION TFG\PLANTILLA TFG FINAL"
+set "HISTORIAL_FOLDER=D:\00000000.- REDACCION TFG\Historial"
 
-rem Crear carpetas necesarias si no existen (ENCAPSULADAS CORRECTAMENTE)
+rem Crear carpetas necesarias si no existen
 if not exist "auxiliares" mkdir "auxiliares"
 if not exist "PDF" mkdir "PDF"
-
-rem Crear la carpeta Historial si no existe
-if not exist "%HISTORIAL_FOLDER%" (
-    echo Creando carpeta Historial...
-    mkdir "%HISTORIAL_FOLDER%"
-    if exist "%HISTORIAL_FOLDER%" (
-        echo Carpeta Historial creada correctamente.
-    ) else (
-        echo ERROR: No se pudo crear la carpeta Historial. Verifica permisos y OneDrive.
-        exit /b
-    )
-)
+if not exist "Historial" mkdir "Historial"
 
 rem Obtener la fecha y hora actual en formato YYYY_MM_DD_HH-mm
 for /f "tokens=2 delims==." %%I in ('wmic os get localdatetime /value ^| find "="') do set datetime=%%I
 set datetime=%datetime:~0,4%_%datetime:~4,2%_%datetime:~6,2%-%datetime:~8,2%-%datetime:~10,2%
 
-rem Compilar el documento LaTeX (USAR COMILLAS PARA EVITAR PROBLEMAS CON ESPACIOS)
+rem Compilar el documento LaTeX
 pdflatex -interaction=nonstopmode -output-directory="auxiliares" "%TEX_SOURCE%\TFG_FS24-031-FSC_MAIN.tex"
 
 rem Copiar el PDF a la carpeta principal y a la carpeta PDF con la fecha y hora
@@ -34,14 +23,11 @@ rem ==============================
 rem  Gestionar Historial de .tex
 rem ==============================
 
-rem Verificar nuevamente la carpeta Historial antes de acceder
-if not exist "%HISTORIAL_FOLDER%" (
-    echo ERROR: La carpeta Historial sigue sin existir. Abortando operacion.
-    exit /b
-)
+rem Crear la carpeta Historial si no existe
+if not exist "Historial" mkdir "Historial"
 
 rem Moverse a la carpeta Historial
-cd /d "%HISTORIAL_FOLDER%"
+cd /d "Historial"
 
 rem Desplazar las carpetas antiguas en el historial (manteniendo solo 5 versiones)
 if exist "5" rmdir /s /q "5"
@@ -51,14 +37,14 @@ if exist "2" ren "2" "3"
 if exist "1" ren "1" "2"
 
 rem Crear la nueva carpeta "1" para la ultima version
-mkdir "1"
+if not exist "1" mkdir "1"
 
 rem Verificar si los archivos existen antes de copiarlos
 echo Buscando archivos .tex en "%TEX_SOURCE%"
 dir "%TEX_SOURCE%\*.tex"
 
-rem Copiar los archivos .tex a la nueva carpeta 1 (ENCAPSULADOS PARA EVITAR PROBLEMAS)
-xcopy /Y /E "%TEX_SOURCE%\*.tex" "%HISTORIAL_FOLDER%\1\" /I
+rem Copiar los archivos .tex a la nueva carpeta 1
+xcopy /Y /E "%TEX_SOURCE%\*.tex" "1\" /I
 
 rem ==============================
 rem  Guardar cambios en GitHub
