@@ -23,9 +23,13 @@ rem ==============================
 rem  GESTIONAR HISTORIAL DE .TEX
 rem ==============================
 
-rem Desplazar las carpetas antiguas en el historial (manteniendo solo 5 versiones)
+rem Crear nuevamente la carpeta Historial si no existe
+if not exist %HISTORIAL_FOLDER% mkdir %HISTORIAL_FOLDER%
+
+rem Moverse a la carpeta Historial
 cd /d %HISTORIAL_FOLDER%
 
+rem Desplazar las carpetas antiguas en el historial (manteniendo solo 5 versiones)
 if exist 5 rmdir /s /q 5
 if exist 4 ren 4 5
 if exist 3 ren 3 4
