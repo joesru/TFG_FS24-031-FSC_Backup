@@ -9,7 +9,7 @@ for /f "tokens=2 delims==." %%I in ('wmic os get localdatetime /value ^| find "=
 set datetime=%datetime:~0,4%_%datetime:~4,2%_%datetime:~6,2%_%datetime:~8,2%-%datetime:~10,2%
 
 rem Compilar el documento LaTeX
-pdflatex -interaction=nonstopmode -output-directory=auxiliares TFG_FS24-031-FSC_MAIN.tex
+pdflatex -interaction=nonstopmode -output-directory=auxiliares "PLANTILLA TFG FINAL\TFG_FS24-031-FSC_MAIN.tex"
 
 rem Copiar el PDF a la carpeta principal y a la carpeta PDF con la fecha y hora
 copy /Y auxiliares\TFG_FS24-031-FSC_MAIN.pdf TFG_FS24-031-FSC_MAIN.pdf
@@ -31,7 +31,7 @@ if exist 1 ren 1 2
 
 rem Crear la nueva carpeta "1" para la última versión y copiar los archivos .tex
 mkdir 1
-xcopy /Y /E "..\*.tex" "1\" /I
+xcopy /Y /E "..\PLANTILLA TFG FINAL\*.tex" "1\" /I
 
 rem Volver a la carpeta raíz del proyecto
 cd ..
