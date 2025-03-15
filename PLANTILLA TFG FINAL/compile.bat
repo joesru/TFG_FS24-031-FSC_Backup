@@ -17,8 +17,20 @@ copy /Y auxiliares\TFG_FS24-031-FSC_MAIN.pdf TFG_FS24-031-FSC_MAIN.pdf
 rem Copiar el PDF a la carpeta "PDF" renombrándolo con fecha y hora
 copy /Y auxiliares\TFG_FS24-031-FSC_MAIN.pdf PDF\TFG_FS24-031-FSC_MAIN_%datetime%.pdf
 
-rem Guardar cambios en GitHub automáticamente
+rem Guardar cambios en Git y subirlos a GitHub automáticamente
 cd /d "%~dp0"  rem Ir a la carpeta del script
+
+rem Añadir todos los archivos al commit
 git add .
-git commit -m "Backup automático"
+
+rem Crear el commit con un mensaje automático
+git commit -m "Backup automático - %datetime%"
+
+rem Intentar subir los cambios a GitHub
 git push origin main
+
+rem Si falla (por falta de conexión), mostrar mensaje
+if %errorlevel% neq 0 (
+    echo No hay conexión a Internet. Los cambios se guardarán localmente y se subirán más tarde.
+)
+
