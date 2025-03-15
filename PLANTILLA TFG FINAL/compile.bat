@@ -44,8 +44,8 @@ rem Verificar si los archivos existen antes de copiarlos
 echo Buscando archivos .tex en "%TEX_SOURCE%"
 dir "%TEX_SOURCE%\*.tex"
 
-rem Copiar los archivos .tex a la nueva carpeta 1
-xcopy /Y /E "%TEX_SOURCE%\*.tex" "1\" /I
+rem **Copiar los archivos .tex asegurando que todos sean incluidos**
+xcopy "%TEX_SOURCE%\*.tex" "1\" /Y /E /C /H /R /I
 
 rem ==============================
 rem  Guardar cambios en GitHub
@@ -67,12 +67,3 @@ rem Si falla (por falta de conexion), mostrar mensaje
 if %errorlevel% neq 0 (
     echo No hay conexion a Internet. Los cambios se guardaran localmente y se subiran mas tarde.
 )
-
-rem ==============================
-rem  Mostrar estructura del directorio
-rem ==============================
-
-echo ==========================
-echo  ESTRUCTURA DEL PROYECTO
-echo ==========================
-tree /F
