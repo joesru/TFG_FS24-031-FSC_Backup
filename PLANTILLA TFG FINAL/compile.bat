@@ -47,7 +47,7 @@ rem Añadir todos los archivos al commit
 git add .
 
 rem Crear el commit con un mensaje automático
-git commit -m "Backup automático - %datetime%"
+git commit -m "Backup automatico - %datetime%"
 
 rem Intentar subir los cambios a GitHub
 git push origin main
