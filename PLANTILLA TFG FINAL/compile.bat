@@ -31,7 +31,7 @@ if exist 1 ren 1 2
 
 rem Crear la nueva carpeta "1" para la última versión y copiar los archivos .tex
 mkdir 1
-xcopy /Y /E "..\*.tex" "1\"
+xcopy /Y /E "..\*.tex" "1\" /I
 
 rem Volver a la carpeta raíz del proyecto
 cd ..
@@ -40,14 +40,11 @@ rem ==============================
 rem  GUARDAR CAMBIOS EN GITHUB
 rem ==============================
 
-rem Guardar cambios en Git y subirlos a GitHub automáticamente
-cd /d "%~dp0"
-
-rem Añadir todos los archivos al commit
-git add .
+rem Asegurar que Git reconoce los cambios eliminando archivos eliminados
+git add -A
 
 rem Crear el commit con un mensaje automático
-git commit -m "Backup automatico - %datetime%"
+git commit -m "Backup automático - %datetime%"
 
 rem Intentar subir los cambios a GitHub
 git push origin main
