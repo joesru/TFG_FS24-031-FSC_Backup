@@ -1,0 +1,154 @@
+\section{Cuestiones}
+
+\subsection*{Sistemas de dos niveles}
+
+\begin{enumerate}
+    
+    \item Para un sistema de dos niveles de energía, obtener las ecuaciones que nos dan la evolución temporal de los coeficientes \( b_1 (t) \) y \( b_2 (t) \) para una perturbación sinusoidal de la forma 
+    \[
+    \hat{W} \equiv \pmqty{ 0 & 2V \cos \omega t \\ 2V \cos \omega t & 0 }.
+    \]
+    ¿En qué consiste la aproximación secular? \textit{(15-12-14)}
+
+    \item En el estudio de un sistema de dos niveles, cuando se introduce la perturbación y escribimos el estado de la forma 
+    \[
+    \ket{\psi (t)} = b_1 (t) e^{-i E_1 t / \hbar} \ket{\varphi_1} + b_2 (t) e^{-i E_2 t / \hbar} \ket{\varphi_2},
+    \]
+    los coeficientes \( b_1 (t) \) y \( b_2 (t) \) satisfacen las siguientes ecuaciones:
+    \[
+    i \hbar \dv{b_1 (t)}{t} = V \qty( e^{i (\omega - \omega_{21}) t} + e^{-i (\omega + \omega_{12}) t}) b_2 (t),
+    \]
+    \[
+    i \hbar \dv{b_2 (t)}{t} = V \qty( e^{i (\omega + \omega_{21}) t} + e^{-i (\omega - \omega_{21}) t}) b_1 (t).
+    \]
+    Aplicar la aproximación secular y resolver estas ecuaciones en el caso de resonancia, con la condición inicial \( b_1 (0) = 1, b_2 (0) = 0 \). Interpretar la solución obtenida. \textit{(11-06-15)}
+
+    \item Tenemos un sistema de dos niveles de energía $E_1 < E_2$, que se encuentra inicialmente en el estado $\ket{\varphi_1}$ correspondiente al valor de la energía $E_1$. Si introducimos una perturbación de frecuencia $\omega$ y amplitud $V$, los coeficientes $b_1 (t)$ y $b_2 (t)$ satisfacen las siguientes ecuaciones:
+    \[
+    i \hbar \dv{b_1 (t)}{t} = V \left( e^{i (\omega - \omega_{21}) t} + e^{-i (\omega + \omega_{21}) t} \right) b_2 (t),
+    \]
+    \[
+    i \hbar \dv{b_2 (t)}{t} = V \left( e^{i (\omega + \omega_{21}) t} + e^{-i (\omega - \omega_{21}) t} \right) b_1 (t).
+    \]
+    Resolver estas ecuaciones en el caso de resonancia y utilizando la aproximación secular, para obtener el estado en el instante $t$. ¿Cuánto tiempo tarda el sistema en regresar al estado inicial? \textit{(12-01-16)}
+
+    \item El hamiltoniano de un sistema de dos niveles está representado por la siguiente matriz:
+    \[
+    \hat{H} \equiv \hat{H}_0 + \hat{W}(t) = \begin{pmatrix} E_1 & 0 \\ 0 & E_2 \end{pmatrix} + \begin{pmatrix} 0 & V e^{-t/\tau} \\ V e^{-t/\tau} & 0 \end{pmatrix}.
+    \]
+    Si escribimos el estado en el instante $t$, de la forma $\ket{\psi(t)} = b_1(t) e^{-i E_1 t / \hbar} \ket{\varphi_1} + b_2(t) e^{-i E_2 t / \hbar} \ket{\varphi_2}$, donde $\ket{\varphi_1}$ y $\ket{\varphi_2}$ son los autovectores de $\hat{H}_0$, encontrar las ecuaciones que nos dan la evolución temporal de los coeficientes $b_1(t)$ y $b_2(t)$. \textit{(02-09-17)}
+
+    \item En la evolución temporal de un sistema de dos niveles, los coeficientes $b_1(t)$ y $b_2(t)$ evolucionan de acuerdo con las ecuaciones:
+    \[
+    i \hbar \dv{b_1(t)}{t} = V \left( e^{i(\omega - \omega_{21})t} + e^{-i(\omega + \omega_{21})t} \right) b_2(t)
+    \]
+    \[
+    i \hbar \dv{b_2(t)}{t} = V \left( e^{i(\omega + \omega_{21})t} + e^{-i(\omega - \omega_{21})t} \right) b_1(t)
+    \]
+    Aplicar la aproximación secular y la aproximación de tiempos cortos, explicando en qué consisten, para obtener la probabilidad de transición y la frecuencia de transición al estado $\ket{\varphi_2}$ si partimos en $t = 0$ del estado $\ket{\varphi_1}$. \textit{(21-01-22)}
+
+    \item La probabilidad de transición desde el estado \(\ket{\varphi_1}\) al estado \(\ket{\varphi_2}\) para un sistema de dos niveles viene dada, en la aproximación de tiempos cortos, por:
+    \[
+    \mathcal{P}_{12} (t) = \left( \frac{2V}{\hbar} \right)^2 \frac{\sin^2 \left[ (\omega - \omega_{21}) t / 2 \right]}{(\omega - \omega_{21})^2}
+    \]
+    Se trata de una función sinc al cuadrado. Calcular la anchura y la altura de esta función, como función de la frecuencia \(\omega\). ¿Hasta cuándo será válido utilizar la aproximación de tiempos cortos? ¿Cuándo esperamos ver la resonancia del sistema? \textit{(07-02-23)}
+
+    \item Las ecuaciones que nos dan la evolución temporal de los coeficientes \( b_1 (t) \) y \( b_2 (t) \) para un sistema de dos niveles una vez hecha la aproximación secular son:
+    \[
+    i \hbar \, \frac{d b_1 (t)}{d t} = V \, e^{i (\omega - \omega_{21}) t} \, b_2 (t)
+    \]
+    \[
+    i \hbar \, \frac{d b_2 (t)}{d t} = V \, e^{-i (\omega - \omega_{21}) t} \, b_1 (t)
+    \]
+    Encontrar la solución en la resonancia con la condición inicial \(\ket{\psi (0)} = \ket{\varphi_2}\). Escribir el vector \(\ket{\psi (t)}\). \textit{(11-01-24)}
+
+    
+
+\end{enumerate}
+
+\subsection*{Probabilidad de transición}
+
+\begin{enumerate}
+    
+    \item De acuerdo a la teoría de perturbaciones dependiente del tiempo hasta primer orden, la probabilidad de transición desde un estado inicial \( \ket{\varphi_i} \) a un estado distinto \( \ket{\varphi_f} \) viene dada por:
+    \[
+    \mathcal{P}_{if}(t) = \frac{1}{\hbar^2} \abs{\int_0^t dt' \, e^{i \omega_{fi} t'} \mel{\varphi_f}{\hat{W}(t')}{\varphi_i}}^2.
+    \]
+    Comentar por qué es lógica esta expresión e indicar cuándo será significativa una probabilidad de transición. \textit{(23-01-15)}    
+
+    \item Definir el concepto de frecuencia de transición $\mathcal{W}_{21}$, para un sistema de dos niveles de energía. \textit{(02-02-16)}
+
+    \item Calcular la probabilidad de transición $\mathcal{P}_{if}^{(1)} (t)$ (con $f \neq i$) para una perturbación $\hat{W}$ constante. Dibujar dicha probabilidad como una función de la frecuencia de Bohr $\omega_{fi}$ indicando cómo se comporta dicha función conforme transcurre el tiempo. \textit{(02-02-16)}
+    
+    \item Definir el concepto de frecuencia de transición $\mathcal{W}_{21}$, para un sistema de dos niveles de energía. \textit{(01-09-16)}
+
+    \item De acuerdo a la teoría de perturbaciones dependiente del tiempo hasta primer orden, la probabilidad de transición desde un estado inicial $\ket{\varphi_i}$ a un estado distinto $\ket{\varphi_f}$ viene dada por:
+    \[
+    \mathcal{P}_{if}(t) = \frac{1}{\hbar^2} \left| \int_0^t \dd{t'} e^{i \omega_{fi} t'} \mel{\varphi_f}{\hat{W}(t')}{\varphi_i} \right|^2.
+    \]
+    Aplicar esta expresión para el caso de una perturbación constante que comienza a actuar desde $t = 0$ y deducir para qué estados $\ket{\varphi_f}$ es más significativa esta probabilidad de transición. \textit{(01-09-16)}
+
+    \item Definir el concepto de frecuencia de transición $\mathcal{W}_{21}$, para un sistema de dos niveles de energía. \textit{(15-01-19)}
+    
+    \item Definir el concepto de frecuencia de transición $\mathcal{W}_{21}$, explicando su significado. \textit{(08-01-21)}
+    
+    \item Explicar razonadamente el concepto de frecuencia de transición que aparece en la teoría de perturbaciones dependiente del tiempo. \textit{(05-09-23)}
+
+    \item Para el caso de una perturbación constante, la probabilidad de transición desde el estado \(\ket{\varphi_i}\) al estado \(\ket{\varphi_f}\), aplicando la teoría de perturbaciones dependiente del tiempo hasta primer orden, vale:
+    \[
+    \mathcal{P}_{if} = \frac{4}{\hbar^2} \left| \mel{\varphi_f}{\hat{W}}{\varphi_i} \right|^2 \frac{\sin^2 \left( \omega_{fi} t / 2 \right)}{\omega_{fi}^2}
+    \]
+    Dibujar esta expresión como función de la frecuencia, indicando los valores de la altura y anchura. \textit{(07-09-23)}
+
+\end{enumerate}
+
+\subsection*{Perturbación sinusoidal}
+
+\begin{enumerate}
+    \item Una partícula se encuentra en el tercer estado excitado de un oscilador armónico de frecuencia $\omega$. Sometemos la partícula a una perturbación que depende del tiempo de la forma
+    \[
+    W(t) = \hat{W} \sin^3 \omega t.
+    \]
+    A la vista de esta dependencia temporal, ¿qué transiciones pueden ocurrir? \textit{(19-01-17)}
+
+    \item Una partícula está sometida al potencial de un oscilador armónico simple de frecuencia $\omega$. En el instante $t = 0$ se encuentra en el estado $\ket{\varphi_2}$ y en dicho instante comienza a actuar una perturbación de la forma $\hat{W}(t) = \hat{W} \sin^3(2\omega t)$. ¿Para qué estados será significativa la probabilidad de transición? \textit{(11-02-22)}
+\end{enumerate}
+
+\subsection*{Regla de Oro de Fermi}
+
+\begin{enumerate}
+    \item En $t = 0$ un sistema se encuentra en el estado $\ket{E_i}$ de energía $E_i$, perteneciente al espectro discreto de un hamiltoniano $\hat{H}_0$. Sometemos el sistema a una perturbación sinusoidal de frecuencia $\omega$, de modo que el estado $\ket{E_i + \hbar \omega}$ es autovector de $\hat{H}_0$ perteneciente al espectro continuo de $\hat{H}_0$. De acuerdo con la regla de oro de Fermi, la probabilidad de que el sistema se vaya al continuo depende del tiempo de la forma:
+    \[
+    \mathcal{P}_{\text{continuo}}(t) = \Gamma t = \frac{2 \pi}{\hbar} \abs{\mel{E_i + \hbar \omega}{\hat{W}}{E_i}}^2 t.
+    \]
+    Demostrar que la probabilidad $\mathcal{P}_{ii}(t)$ de que el sistema continúe en el estado inicial decae exponencialmente con el tiempo. \textit{(15-01-19)}
+
+\end{enumerate}
+
+\subsection*{Decaimiento de un estado discreto a un continuo de estados}
+
+\begin{enumerate}
+    \item En el decaimiento de un estado discreto a un continuo de estados debido a una perturbación sinusoidal, la probabilidad de que el sistema se encuentre en el estado inicial decae exponencialmente con el tiempo de la forma:
+    \[
+    \mathcal{P}_{ii} (t) = e^{-\Gamma t}
+    \]
+    donde:
+    \[
+    \Gamma = \frac{2 \pi}{\hbar} \left| \bra{\alpha = G(E_i + \hbar \omega)} \hat{W} \ket{\varphi_i} \right|^2 \rho (E_i + \hbar \omega)
+    \]
+    ¿Cómo depende del tiempo la perturbación \(\hat{W} (t)\)? ¿Qué significa \(\alpha\)? ¿Qué significa \(G\)? ¿Qué significa \(\rho\)? \textit{(02-02-24)}
+\end{enumerate}
+
+\subsection*{Transiciones adiabáticas}
+
+\begin{enumerate}
+    \item Explicar en palabras en qué consisten las transiciones adiabáticas. \textit{(19-01-23)}
+\end{enumerate}
+
+\subsection*{Observación continua de un estado}
+
+\begin{enumerate}    
+
+    \item Explicar con palabras (no con ecuaciones) en qué consiste el efecto Zenón cuántico. \textit{(09-02-21)}
+
+\end{enumerate}

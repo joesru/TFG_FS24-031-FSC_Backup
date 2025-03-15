@@ -1,0 +1,262 @@
+\usepackage[latin1,utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{slantsc}
+%\usepackage{helvet}  %FUENTE ARIAL
+%\renewcommand{\familydefault}{\sfdefault}
+
+% AMS Packages
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage[version=4]{mhchem}
+
+% Other Packages
+\usepackage{textcomp}
+%\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{dsfont}
+\usepackage[usenames]{color} %para usar colores con el comando \textcolor{nombre color en inglés}{texto}
+\usepackage{framed}
+\usepackage{xcolor}
+
+% Tables
+\renewcommand{\arraystretch}{1.5}
+
+% Page settings
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+\usepackage{setspace}
+\linespread{1.3}
+%\setlength{\parindent}{1cm} % Sangría por defecto
+%\setlength{\parindent}{0cm} % si no quiero tener sangrías
+\setlength{\parindent}{1cm}
+\usepackage{makeidx}
+\newcommand*\emptyPage{\newpage\null\thispagestyle{empty}\newpage}
+\accentedoperators    % Pone acentos a los operadores
+\decimalpoint   
+
+% Para las cabeceras y pies (luego se redefine cuando haga falta)
+\usepackage{fancyhdr}
+\setlength{\headheight}{14.6104pt}   % Para las cabeceras
+\pagestyle{fancy} 
+\fancyhf{}
+\fancyhead[R]{\textit{\nouppercase{\leftmark}}}
+\fancyhead[L]{\textit{\scshape{\thepage}}}
+\fancyfoot[R,L,C]{}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{%
+\fancyhf{} % clear all header and footer fields
+\fancyfoot[R]{\textit{\scshape{\thepage}}} % except the center
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}}
+
+%Para el fondo de la portada
+\usepackage{eso-pic}
+\newcommand\BackgroundPic{%
+\put(0,0){%
+\parbox[b][\paperheight]{\paperwidth}{%
+\vfill
+\centering
+\includegraphics[width=\paperwidth,height=\paperheight,%
+keepaspectratio]{img/fondo_portada.png}%
+\vfill
+}}}
+
+% Graphics
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage[labelfont=bf,labelsep=period,font={footnotesize,it}]{caption}
+\usepackage{svg}
+\usepackage{tikz}
+\usepackage{calc}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{appendix}   % Contiene mandatos adicionales para ap�ndices
+   % Para redefinir cap�tulos, secciones,...
+\usepackage{longtable}
+%\renewcommand{\labelitemi}{\scriptsize$\blacksquare$}
+\usepackage{physics}
+\usepackage{upgreek} % para poner letras griegas sin cursiva
+\usepackage{cancel} % para tachar
+\usepackage{multirow}
+\usepackage{lscape}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{multicol}
+\usepackage{verbatim} % comentarios
+\usepackage{pdfpages}
+\usepackage{mathdots} % para el comando \iddots
+\usepackage{mathrsfs} % para formato de letra
+\usepackage{stackrel} % para el comando \stackbin
+
+
+
+%% ENTORNO TEOREMA          
+
+%\newtheorem{theorem}{Teorema}[section] %se usa \begin{theorem}[Nombre del teorema si lo tiene] Enunciado \end{theorem}
+%	\newtheorem{lemma}[theorem]{Lema}
+%	\newtheorem{proposition}[theorem]{Proposición}
+%	\newtheorem{corollary}[theorem]{Corolario}
+%	\newtheorem{definition}[theorem]{Definición}
+%	\newtheorem{example}[theorem]{Ejemplo}
+%	\newtheorem{xca}[theorem]{Ejercicio}
+%	\newtheorem{remark}[theorem]{Observación}
+%	\renewcommand*{\proofname}{Demostración} %para que escriba Demostración en lugar de proof; se usa \begin{proof} Prueba \end{proof}
+
+
+
+%% ENTORNO TEOREMA  EN INGLES         
+
+\newtheorem{theorem}{Theorem}[section] %se usa \begin{theorem}[Nombre del teorema si lo tiene] Enunciado \end{theorem}
+	\newtheorem{lemma}[theorem]{LemMa}
+	\newtheorem{proposition}[theorem]{Proposition}
+	\newtheorem{corollary}[theorem]{Corollary}
+	\newtheorem{definition}[theorem]{Definition}
+	\newtheorem{example}[theorem]{Example}
+	\newtheorem{xca}[theorem]{Exercise}
+	\newtheorem{remark}[theorem]{Remark}
+	\renewcommand*{\proofname}{Proof} %para que escriba Demostración en lugar de proof; se usa \begin{proof} Prueba \end{proof}
+
+
+
+
+% Hyperref
+\usepackage[pdfa]{hyperref}
+\hypersetup{
+	colorlinks=true, %set true if you want colored links
+	linktoc=all,     %set to all if you want both sections and subsections linked
+	linkcolor=black,  %choose some color if you want links to stand out
+	urlcolor=blue,
+	citecolor=red,    % PDF metadata
+	pdfauthor={José Estepa Ruiz},
+	pdftitle={MECANICA CUANTICA 2024-25},
+	pdfsubject={Mecanica Cuantica},
+	pdfkeywords={Schrodinger, Heisenberg},
+	pdfproducer={Latex with hyperref},
+	pdfcreator={Visual Studio Code}
+}
+
+\usepackage[nottoc]{tocbibind}
+%\usepackage{notoccite}
+
+% BibTeX
+\bibliographystyle{doc/nf}
+
+% Useful personal commands
+\newcommand{\centigrade}{$^{\circ}$}
+\newcommand{\mum}{\mu\text{m}}
+\newcommand{\muA}{\mu\text{A}}
+\newcommand{\nA}{\text{nA}}
+
+\newenvironment{dedication}
+{
+   \cleardoublepage
+   \thispagestyle{empty}
+   \vspace*{\stretch{1}}
+   \hfill\begin{minipage}[t]{0.66\textwidth}
+   \raggedright
+}
+{
+   \end{minipage}
+   \vspace*{\stretch{3}}
+   \clearpage
+}
+
+% chapters formatx
+\usepackage{etoolbox}% http://ctan.org/pkg/etoolbox
+\makeatletter
+% \patchcmd{<cmd>}{<search>}{<replace>}{<success>}{<failure>}
+% --- Patch \chapter
+\patchcmd{\@makechapterhead}{50\p@}{\chapheadtopskip}{}{}% Space from top of page to CHAPTER X
+\patchcmd{\@makechapterhead}{20\p@}{\chapheadsep}{}{}% Space between CHAPTER X and CHAPTER TITLE
+\patchcmd{\@makechapterhead}{40\p@}{\chapheadbelowskip}{}{}% Space between CHAPTER TITLE and text
+% --- Patch \chapter*
+\patchcmd{\@makeschapterhead}{50\p@}{\chapheadtopskip}{}{}% Space from top of page to CHAPTER TITLE
+\patchcmd{\@makeschapterhead}{40\p@}{\chapheadbelowskip}{}{}% SPace between CHAPTER TITLE and text
+\makeatother
+% Set new lengths
+\newlength{\chapheadtopskip}\setlength{\chapheadtopskip}{0pt}
+\newlength{\chapheadsep}\setlength{\chapheadsep}{5pt}
+\newlength{\chapheadbelowskip}\setlength{\chapheadbelowskip}{10pt}
+\usepackage{titlesec}
+
+% Para cuando no quiero que salga lo de TEMA o CAPITULO 
+%\titleformat{\chapter}[display]{\normalfont\bfseries}{}{0pt}{\Huge}
+%\titlespacing*{\chapter}{0pt}{-30pt}{40pt}
+
+\setcounter{tocdepth}{5}
+
+\providecommand{\abs}[1]{\lvert#1\rvert}
+\providecommand{\norm}[1]{\lVert#1\rVert}
+
+\usepackage{listings} %Para escribir código
+\usepackage{verbatim}
+
+\usepackage{mathtools}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{width=7cm,compat=1.3}
+
+\usepackage{mathrsfs}
+\usepackage{easyReview} % Para subrayar texto (florescente)
+
+\everymath{\displaystyle}
+
+%\renewcommand{\theenumiii}{\roman{enumi}}
+
+% ME HE CANSADO DE ESCRIBIR TODO EL RATO LO MISMO ASÍ QUE DEFINO ESTOS COMANDOS
+
+\newcommand{\R}{\mathbb{R}} % Para denotar a los numeros reales
+\newcommand{\N}{\mathbb{N}} % Para denotar a los numeros naturales
+\newcommand{\Z}{\mathbb{Z}} % Para denotar a los numeros enteros
+\newcommand{\C}{\mathbb{C}} % Para denotar a los numeros complejos
+\newcommand{\Q}{\mathbb{Q}} % Para denotar a los numeros racionales
+\newcommand{\cC}{\mathcal{C}} % Para poner la C de clase
+\newcommand{\lL}{\mathcal{L}} % Para poner la L de operador lineal en MMII o lagrangiana
+\newcommand{\aA}{\mathcal{A}} % Para poner la A de álgebra
+\newcommand{\fF}{\mathcal{F}} % Para poner la F de espacio de funciones o la F de snedecor
+\newcommand{\zZ}{\mathcal{Z}} % Para poner la Z de ceros de una función en MMII
+\newcommand{\dD}{\mathcal{D}} % Para poner la D de conjunto de operadores lineales D
+
+
+% PARA REMARCAR LOS TEOREMAS, DEFINICIONES... EN CAJAS DE COLORES
+% https://tex.stackexchange.com/questions/36278/box-around-theorem-statement
+
+\usepackage{tcolorbox}
+\tcbuselibrary{theorems}
+
+\newtcbtheorem[number within=section]{mytheo}{Theorem}%
+{colback=green!5,colframe=green!35!black,fonttitle=\bfseries}{th}
+
+\newtcbtheorem[number within=section]{mydef}{Definition}%
+{colback=blue!5,colframe=blue!35!black,fonttitle=\bfseries}{th}
+
+\newtcbtheorem[number within=section]{myalg}{Algorithm}%
+{colback=cyan!5,colframe=cyan!35!black,fonttitle=\bfseries}{th}
+
+\newtcbtheorem[number within=section]{myex}{Example}%
+{colback=gray!5,colframe=gray!35!black,fonttitle=\bfseries}{th}
+
+
+\newtcbtheorem[number within=section]{mylemma}{Lemma}%
+{colback=lime!5,colframe=lime!35!black,fonttitle=\bfseries}{th}
+
+\newtcbtheorem[number within=section]{myremark}{Remark}%
+{colback=red!5,colframe=red!35!black,fonttitle=\bfseries}{th}
+
+
+\newtcbtheorem[number within=section]{myexercise}{Exercise}%
+{colback=cyan!5,colframe=cyan!35!black,fonttitle=\bfseries}{th}
+
+
+\newtcbtheorem[number within=section]{myprop}{Proposition}%
+{colback=olive!5,colframe=olive!35!black,fonttitle=\bfseries}{th}
+
+\newtcbtheorem[number within=section]{myproof}{Proof}%
+{colback=teal!5,colframe=teal!35!black,fonttitle=\bfseries}{th}
+
+% Ejemplo de como se usa
+
+% \begin{mytheo}{Titulo del teorema}{}
+%     Contenido del teorema
+% \end{mytheo}

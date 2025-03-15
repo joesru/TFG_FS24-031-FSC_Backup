@@ -1,0 +1,29 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Compilar y renombrar PDF",
+      "type": "shell",
+      "command": "${workspaceFolder}\\compile.bat",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always"
+      }
+    }
+  ]
+}
+
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Compilar con batch",
+      "type": "shell",
+      "command": "C:\\Users\\josee\\OneDrive - Universidad de Córdoba\\FÍSICA\\4º DE FÍSICA\\2.- CURSO 2024-25 - UCO\\TFG\\00.- REDACCION TFG\\plantilla_TFG_CienciasUCO_2022_utf8\\compile.bat",
+      "problemMatcher": []
+    }
+  ]
+}

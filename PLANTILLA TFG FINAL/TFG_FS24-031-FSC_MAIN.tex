@@ -1,0 +1,107 @@
+% ----------------------------------------------- 
+%  Plantilla LaTeX para el Trabajo Fin de Grado
+%         Facultad de Ciencias
+%        Universidad de Córdoba
+%             Codificación utf8
+%------------------------------------------------
+%              Abril 2022
+%------------------------------------------------
+
+
+% MEJOR ABRIR DIRECTAMENTE EL DIRECTORIO PRINCIPAL DESDE EL VSCODE Y ASÍ LAS RUTINAS
+% QUE TENGO PROGRAMADAS TE LAS DETECTA EL PROGRAMA
+
+% A LA HORA DE COMPILAR HACERLO COMO SIEMPRE PARA PODER TENER EL PDF PRINCIPAL
+% Y UNA VEZ HECHO ESO VIENDO QUE NO HAYA ERROR EN LA COMPILACIÓN DE ESE PDF 
+% EJECUTAR EL ARCHIVO "compile.bat" QUE ESTÁ EN EL DIRECTORIO PRINCIPAL%
+% LO QUE HACE ESE ARCHIVO ES GUARDAR UNA COPIA DEL PDF CON LA FECHA DE MODIFICACIÓN
+
+% OTRA FORMA SI SE HA ABIERTO EL DIRECTORIO CON EN VSCODE ES USAR CONTROL+SHIFT+B
+
+% set datetime=%datetime:~0,8%_%datetime:~8,6%
+
+\documentclass[12pt,a4paper]{report}
+
+% Fichero de estilo proporcionado
+\input{estilo_TFG_CienciasUCO_2022_utf8.sty}
+
+%%%% Nuevas definiciones %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%--------------------------------------------------------------------------------------
+% CAMBIAR LOS DATOS EN CADA CASO 
+
+\newcommand{\titulacion}{Grado de Física}                  
+                                                      
+\newcommand{\titulo}{Método del Funcional de la Densidad para estructura electrónica de moléculas} % Título
+\newcommand{\codigo}{FS24-031-FSC}      % Código
+\newcommand{\tipo}{Trabajo teórico-práctico}             % Trabajo teórico--práctico general
+                                          		     % Trabajo de iniciación a la investigación
+                                                      % Trabajo en empresa
+                                                      % Idea de negocio
+                                                      % Propuesta científico--técnica
+                                                      % Trabajo docente
+                                          
+\newcommand{\autor}{José Estepa Ruiz}     % Autor
+\newcommand{\fecha}{\today}                 % Fecha de entrega
+%--------------------------------------------------------------------------------------
+\newcommand{\nomfig}{Figura}                         
+\newcommand{\nomfigs}{figuras} 
+
+% Si se quiere que las figuras se denominen ilustraciones comentar las dos órdenes
+% anteriores y descomentar las dos que siguen 
+
+%\newcommand{\nomfig}{Ilustración}                         
+%\newcommand{\nomfigs}{ilustraciones}   
+
+
+%--------------------------------------------------------------------------------------
+
+% Empieza el documento
+\begin{document}
+
+
+
+
+% No cambiar  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{000. Portada}   % Dejar esta línea (incluirá el fichero portada.tex proporcionado, que no hay que modificar)
+% Fin de No cambiar %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%% \include{000. Agradecimientos} % Agradecimientos y/o dedicatoria si procede (si no comentar esta línea)
+
+% No cambiar  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{000. Indices}  % Dejar esta línea (incluirá el fichero indices.tex proporcionado, que no hay que modificar)
+% Fin de No cambiar %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% \include{000. Resumen}          % Resumen (insertar en el fichero resumen.tex proporcionado, el resumen en español e inglés)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% A PARTIR DE AQUÍ SE INCLUYEN LOS CAPÍTULOS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\include{1.0.- TEORIA}
+\include{2.0.- SOFTWARE}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+% \include{000. Bibliografia}     % Bibliografía (insertar en el fichero bibliografia.tex proporcionado, la bibliografia con bibitem)
+
+%----------------------------------------------------------
+% Si se tiene una base de datos bibliográfica
+% estilo de bibliografía: plana, alfa...
+%\bibliographystyle{plain}
+
+% Bibliografía---------------------------
+% Añade la bibliografía al índice
+%\addcontentsline{toc}{chapter}{Bibliografía}
+
+%se incluye la bibliografía. Archivo de tipo .bib (bibtex)
+%\bibliography{bibliografia}
+%----------------------------------------------------------
+
+% Apéndices (si los hubiera) INCLUIR AQUÍ LOS APÉNDICES
+\appendix
+
+% Termina el documento
+\end{document}
