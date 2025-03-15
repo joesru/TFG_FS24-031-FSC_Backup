@@ -40,12 +40,28 @@ if exist "1" ren "1" "2"
 rem Crear la nueva carpeta "1" para la ultima version
 if not exist "1" mkdir "1"
 
-rem Verificar si los archivos existen antes de copiarlos
-echo Buscando archivos .tex en "%TEX_SOURCE%"
+rem ==============================
+rem  Verificar si hay archivos .tex antes de copiarlos
+rem ==============================
+echo Buscando archivos .tex en "%TEX_SOURCE%"...
 dir "%TEX_SOURCE%\*.tex"
 
-rem **Copiar los archivos .tex asegurando que todos sean incluidos**
+rem Si no hay archivos .tex, mostrar error y salir
+if not exist "%TEX_SOURCE%\*.tex" (
+    echo ERROR: No se encontraron archivos .tex en "%TEX_SOURCE%".
+    pause
+    exit /b
+)
+
+rem ==============================
+rem  Copiar archivos .tex a Historial
+rem ==============================
+echo Copiando archivos .tex a Historial\1...
 xcopy "%TEX_SOURCE%\*.tex" "1\" /Y /E /C /H /R /I
+if %errorlevel% neq 0 (
+    echo ERROR: No se pudieron copiar los archivos .tex con xcopy. Intentando con copy...
+    copy /Y "%TEX_SOURCE%\*.tex" "1\"
+)
 
 rem ==============================
 rem  Guardar cambios en GitHub
