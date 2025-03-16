@@ -28,9 +28,21 @@ rem ==============================
 rem Moverse a la carpeta Historial
 cd /d "%HISTORIAL_FOLDER%"
 
-rem Crear una nueva carpeta con el nombre de la fecha
-set "NEW_FOLDER=%datetime%"
-mkdir "%NEW_FOLDER%"
+rem Contar cuántas carpetas hay en el historial
+for /f %%A in ('dir /b /ad ^| find /c /v ""') do set folder_count=%%A
+
+rem Si hay 10 o más carpetas, borrar la más antigua
+if %folder_count% GEQ 10 (
+    for /f "delims=" %%F in ('dir /b /ad /o-d') do (
+        rmdir /s /q "%%F"
+        goto :break
+    )
+)
+:break
+
+rem Crear la nueva carpeta con la fecha y hora actual
+mkdir "%HISTORIAL_FOLDER%\%datetime%"
+
 
 rem ==============================
 rem  Verificar si hay archivos .tex y .sty antes de copiarlos
@@ -57,21 +69,6 @@ if %errorlevel% neq 0 (
     echo ERROR: No se pudieron copiar los archivos con xcopy. Intentando con copy...
     for %%f in ("%TEX_SOURCE%\*.tex") do copy /Y "%%f" "%NEW_FOLDER%\"
     for %%f in ("%TEX_SOURCE%\*.sty") do copy /Y "%%f" "%NEW_FOLDER%\"
-)
-
-rem ==============================
-rem  Limitar historial a 10 carpetas
-rem ==============================
-
-rem Contar el número de carpetas en Historial
-for /f "tokens=*" %%A in ('dir /b /ad "%HISTORIAL_FOLDER%" ^| find /c /v ""') do set FolderCount=%%A
-
-rem Si hay más de 10 carpetas, eliminar las más antiguas
-if %FolderCount% GTR 10 (
-    for /f "skip=10 delims=" %%F in ('dir /b /od "%HISTORIAL_FOLDER%"') do (
-        echo Eliminando carpeta antigua: %%F
-        rmdir /s /q "%%F"
-    )
 )
 
 rem ==============================
