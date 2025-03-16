@@ -59,6 +59,21 @@ if %errorlevel% neq 0 (
 )
 
 rem ==============================
+rem  Limitar historial a 10 carpetas
+rem ==============================
+
+rem Contar el número de carpetas en Historial
+for /f "tokens=*" %%A in ('dir /b /ad "%HISTORIAL_FOLDER%" ^| find /c /v ""') do set FolderCount=%%A
+
+rem Si hay más de 10 carpetas, eliminar las más antiguas
+if %FolderCount% GTR 10 (
+    for /f "skip=10 delims=" %%F in ('dir /b /od "%HISTORIAL_FOLDER%"') do (
+        echo Eliminando carpeta antigua: %%F
+        rmdir /s /q "%%F"
+    )
+)
+
+rem ==============================
 rem  Guardar cambios en GitHub
 rem ==============================
 
@@ -80,4 +95,3 @@ if %errorlevel% neq 0 (
 )
 
 echo Respaldo completado y cambios subidos a GitHub: %datetime%
-
