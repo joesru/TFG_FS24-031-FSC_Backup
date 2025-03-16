@@ -80,4 +80,4 @@ if %errorlevel% neq 0 (
 )
 
 echo Respaldo completado y cambios subidos a GitHub: %datetime%
-
+exit
