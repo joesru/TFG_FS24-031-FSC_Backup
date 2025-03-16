@@ -41,7 +41,9 @@ if %folder_count% GEQ 10 (
 :break
 
 rem Crear la nueva carpeta con la fecha y hora actual
-mkdir "%HISTORIAL_FOLDER%\%datetime%"
+set "NEW_FOLDER=%HISTORIAL_FOLDER%\%datetime%"
+mkdir "%NEW_FOLDER%"
+
 
 
 rem ==============================
@@ -65,11 +67,13 @@ echo Copiando archivos .tex y .sty a "%NEW_FOLDER%"...
 xcopy "%TEX_SOURCE%\*.tex" "%NEW_FOLDER%\" /Y /E /C /H /R /I
 xcopy "%TEX_SOURCE%\*.sty" "%NEW_FOLDER%\" /Y /E /C /H /R /I
 
+
 if %errorlevel% neq 0 (
     echo ERROR: No se pudieron copiar los archivos con xcopy. Intentando con copy...
     for %%f in ("%TEX_SOURCE%\*.tex") do copy /Y "%%f" "%NEW_FOLDER%\"
     for %%f in ("%TEX_SOURCE%\*.sty") do copy /Y "%%f" "%NEW_FOLDER%\"
 )
+
 
 rem ==============================
 rem  Guardar cambios en GitHub
