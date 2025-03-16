@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.3.7)  15 MAR 2025 21:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.3.7)  16 MAR 2025 10:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1217,9 +1217,7 @@ IN.aux
 LaTeX Info: Redefining \. on input line 13.
 LaTeX Info: Redefining \% on input line 13.
 
-(D:\00000000.- REDACCION TFG\PLANTILLA TFG FINAL\auxiliares\1.0.- TEORIA.aux)
-(D:\00000000.- REDACCION TFG\PLANTILLA TFG FINAL\auxiliares\2.0.- SOFTWARE.aux)
-)
+(D:\00000000.- REDACCION TFG\PLANTILLA TFG FINAL\auxiliares\1.0.- TEORIA.aux))
 \openout1 = `TFG_FS24-031-FSC_MAIN.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
@@ -1336,7 +1334,7 @@ Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PD
 F (HO)
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )) (000. Portada.tex
-<img/Logotipo_I_Facultad_de_Ciencias_Fondo_blanco_negativo.png, id=60, 430.2474
+<img/Logotipo_I_Facultad_de_Ciencias_Fondo_blanco_negativo.png, id=56, 430.2474
 pt x 428.802pt>
 File: img/Logotipo_I_Facultad_de_Ciencias_Fondo_blanco_negativo.png Graphic fil
 e (type png)
@@ -1346,7 +1344,7 @@ ivo.png  used on input line 23.
 (pdftex.def)             Requested size: 170.71652pt x 170.14372pt.
 
 
-<img/fondo_portada.png, id=62, 578.16pt x 831.105pt>
+<img/fondo_portada.png, id=58, 578.16pt x 831.105pt>
 File: img/fondo_portada.png Graphic file (type png)
 <use img/fondo_portada.png>
 Package pdftex.def Info: img/fondo_portada.png  used on input line 27.
@@ -1425,38 +1423,24 @@ Cap\'{\i }tulo 1.
 
 
 ]
-\openout2 = `"2.0.- SOFTWARE.aux"'.
-
- (2.0.- SOFTWARE.tex
-Cap\'{\i }tulo 2.
-)
-
-[5
-
-
-
-
-]
 (D:\00000000.- REDACCION TFG\PLANTILLA TFG FINAL\auxiliares\TFG_FS24-031-FSC_MA
 IN.aux
 LaTeX Info: Redefining \. on input line 13.
 LaTeX Info: Redefining \% on input line 13.
 
-(D:\00000000.- REDACCION TFG\PLANTILLA TFG FINAL\auxiliares\1.0.- TEORIA.aux)
-(D:\00000000.- REDACCION TFG\PLANTILLA TFG FINAL\auxiliares\2.0.- SOFTWARE.aux)
-)
+(D:\00000000.- REDACCION TFG\PLANTILLA TFG FINAL\auxiliares\1.0.- TEORIA.aux))
  ***********
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
  ***********
 Package rerunfilecheck Info: File `TFG_FS24-031-FSC_MAIN.out' has not changed.
-(rerunfilecheck)             Checksum: 72B9C107D259907BB8F41FF9D67EEF27;2124.
+(rerunfilecheck)             Checksum: 3110ACDE5DECE1F13BFCEF35C192041A;2040.
  ) 
 Here is how much of TeX's memory you used:
- 31745 strings out of 473644
- 584830 string characters out of 5717516
- 1078164 words of memory out of 5000000
- 54172 multiletter control sequences out of 15000+600000
+ 31716 strings out of 473644
+ 583788 string characters out of 5717516
+ 1077164 words of memory out of 5000000
+ 54152 multiletter control sequences out of 15000+600000
  575255 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,12n,96p,1049b,524s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1474,9 +1458,9 @@ sers/josee/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfxc1200.p
 fb><C:/Users/josee/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sf
 xc1440.pfb>
 Output written on "D:\00000000.- REDACCION TFG\PLANTILLA TFG FINAL\auxiliares\T
-FG_FS24-031-FSC_MAIN.pdf" (6 pages, 260394 bytes).
+FG_FS24-031-FSC_MAIN.pdf" (5 pages, 249537 bytes).
 PDF statistics:
- 180 PDF objects out of 1000 (max. 8388607)
- 18 named destinations out of 1000 (max. 500000)
- 135 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 170 PDF objects out of 1000 (max. 8388607)
+ 16 named destinations out of 1000 (max. 500000)
+ 127 words of extra memory for PDF output out of 10000 (max. 10000000)
 

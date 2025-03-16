@@ -12,4 +12,3 @@
 \contentsline {section}{\numberline {1.3}Teoremas de Hoohenberg-Kohn}{4}{section.1.3}%
 \contentsline {section}{\numberline {1.4}Ecuaciones de Kohn-Sham}{4}{section.1.4}%
 \contentsline {section}{\numberline {1.5}Funcionales de la Densidad}{4}{section.1.5}%
-\contentsline {chapter}{\numberline {2}SOFTWARE}{5}{chapter.2}%
