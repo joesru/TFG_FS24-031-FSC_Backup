@@ -27,12 +27,12 @@ rem ==============================
 rem Moverse a la carpeta Historial
 cd /d "%HISTORIAL_FOLDER%"
 
-rem Borrar la carpeta 10 si existe (la más antigua)
-if exist "10 - "* rmdir /s /q "10 - *"
-
-rem Desplazar las carpetas antiguas (9 -> 10, 8 -> 9, ..., 1 -> 2)
-for /l %%i in (9,-1,1) do (
-    if exist "%%i - "* ren "%%i - *" "%%i+1 - *"
+rem Buscar la carpeta con el número más alto y mover todas hacia arriba
+setlocal enabledelayedexpansion
+for /f "tokens=1 delims=-" %%A in ('dir /b /ad ^| findstr "^[1-9] - "') do (
+    set folder=%%A
+    set /a newfolder=!folder!+1
+    ren "%%A - *" "!newfolder! - *"
 )
 
 rem Crear la nueva carpeta "1 - Fecha de compilación"
@@ -88,3 +88,4 @@ if %errorlevel% neq 0 (
 )
 
 echo Respaldo completado y cambios subidos a GitHub: %datetime%
+
