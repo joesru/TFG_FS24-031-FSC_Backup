@@ -21,22 +21,14 @@ copy /Y "auxiliares\TFG_FS24-031-FSC_MAIN.pdf" "TFG_FS24-031-FSC_MAIN.pdf"
 copy /Y "auxiliares\TFG_FS24-031-FSC_MAIN.pdf" "PDF\TFG_FS24-031-FSC_MAIN_%datetime%.pdf"
 
 rem ==============================
-rem  Gestionar Historial de .tex y .sty (Mantenimiento de 10 versiones)
+rem  Guardar Historial de .tex y .sty
 rem ==============================
 
 rem Moverse a la carpeta Historial
 cd /d "%HISTORIAL_FOLDER%"
 
-rem Buscar la carpeta con el número más alto y mover todas hacia arriba
-setlocal enabledelayedexpansion
-for /f "tokens=1 delims=-" %%A in ('dir /b /ad ^| findstr "^[1-9] - "') do (
-    set folder=%%A
-    set /a newfolder=!folder!+1
-    ren "%%A - *" "!newfolder! - *"
-)
-
-rem Crear la nueva carpeta "1 - Fecha de compilación"
-set "NEW_FOLDER=1 - %datetime%"
+rem Crear una nueva carpeta con el nombre de la fecha
+set "NEW_FOLDER=%datetime%"
 mkdir "%NEW_FOLDER%"
 
 rem ==============================
@@ -54,7 +46,7 @@ if not exist "%TEX_SOURCE%\*.tex" if not exist "%TEX_SOURCE%\*.sty" (
 )
 
 rem ==============================
-rem  Copiar archivos .tex y .sty a Historial\1 - Fecha de compilación
+rem  Copiar archivos .tex y .sty a la nueva carpeta con la fecha de compilación
 rem ==============================
 echo Copiando archivos .tex y .sty a "%NEW_FOLDER%"...
 xcopy "%TEX_SOURCE%\*.tex" "%NEW_FOLDER%\" /Y /E /C /H /R /I
@@ -70,7 +62,7 @@ rem ==============================
 rem  Guardar cambios en GitHub
 rem ==============================
 
-rem Volver a la carpeta raiz del proyecto
+rem Volver a la carpeta raíz del proyecto
 cd /d "%TEX_SOURCE%"
 
 rem Asegurar que Git reconoce los cambios eliminando archivos eliminados
