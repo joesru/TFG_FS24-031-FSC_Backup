@@ -8,9 +8,10 @@ if not exist "%TEX_SOURCE%\auxiliares" mkdir "%TEX_SOURCE%\auxiliares"
 if not exist "%TEX_SOURCE%\PDF" mkdir "%TEX_SOURCE%\PDF"
 if not exist "%HISTORIAL_FOLDER%" mkdir "%HISTORIAL_FOLDER%"
 
-rem Obtener la fecha y hora actual en formato YYYY_MM_DD_HH-mm
+rem Obtener la fecha y hora actual en formato YYYY_MM_DD_HH-mm-ss
 for /f "tokens=2 delims==." %%I in ('wmic os get localdatetime /value ^| find "="') do set datetime=%%I
-set datetime=%datetime:~0,4%_%datetime:~4,2%_%datetime:~6,2%-%datetime:~8,2%-%datetime:~10,2%
+set datetime=%datetime:~0,4%_%datetime:~4,2%_%datetime:~6,2%-%datetime:~8,2%-%datetime:~10,2%-%datetime:~12,2%
+
 
 rem Compilar el documento LaTeX
 cd /d "%TEX_SOURCE%"
