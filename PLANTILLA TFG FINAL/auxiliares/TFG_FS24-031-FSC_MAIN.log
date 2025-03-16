@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.3.7)  16 MAR 2025 11:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.3.7)  16 MAR 2025 11:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1334,7 +1334,7 @@ Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PD
 F (HO)
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )) (000. Portada.tex
-<img/Logotipo_I_Facultad_de_Ciencias_Fondo_blanco_negativo.png, id=38, 430.2474
+<img/Logotipo_I_Facultad_de_Ciencias_Fondo_blanco_negativo.png, id=42, 430.2474
 pt x 428.802pt>
 File: img/Logotipo_I_Facultad_de_Ciencias_Fondo_blanco_negativo.png Graphic fil
 e (type png)
@@ -1344,7 +1344,7 @@ ivo.png  used on input line 23.
 (pdftex.def)             Requested size: 170.71652pt x 170.14372pt.
 
 
-<img/fondo_portada.png, id=40, 578.16pt x 831.105pt>
+<img/fondo_portada.png, id=44, 578.16pt x 831.105pt>
 File: img/fondo_portada.png Graphic file (type png)
 <use img/fondo_portada.png>
 Package pdftex.def Info: img/fondo_portada.png  used on input line 27.
@@ -1417,7 +1417,7 @@ LaTeX Info: Redefining \% on input line 1.
 
  (1.0.- TEORIA.tex
 Cap\'{\i }tulo 1.
-)
+(1.1.- Que es el DFT.tex))
 
 [4
 
@@ -1434,13 +1434,13 @@ LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
  ***********
 Package rerunfilecheck Info: File `TFG_FS24-031-FSC_MAIN.out' has not changed.
-(rerunfilecheck)             Checksum: 618BD07A3EC782986D0F3F88BAF03229;1230.
+(rerunfilecheck)             Checksum: E3D7F312519E18A8B8F268728565E7F3;1374.
  ) 
 Here is how much of TeX's memory you used:
- 31703 strings out of 473644
- 583598 string characters out of 5717516
- 1075164 words of memory out of 5000000
- 54144 multiletter control sequences out of 15000+600000
+ 31713 strings out of 473644
+ 583840 string characters out of 5717516
+ 1076164 words of memory out of 5000000
+ 54148 multiletter control sequences out of 15000+600000
  573890 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,12n,96p,1049b,524s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1457,9 +1457,9 @@ ee/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfsx2488.pfb><C:/U
 sers/josee/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfxc1440.p
 fb>
 Output written on "D:\00000000.- REDACCION TFG\PLANTILLA TFG FINAL\auxiliares\T
-FG_FS24-031-FSC_MAIN.pdf" (5 pages, 226630 bytes).
+FG_FS24-031-FSC_MAIN.pdf" (5 pages, 229762 bytes).
 PDF statistics:
- 137 PDF objects out of 1000 (max. 8388607)
- 13 named destinations out of 1000 (max. 500000)
- 87 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 143 PDF objects out of 1000 (max. 8388607)
+ 14 named destinations out of 1000 (max. 500000)
+ 95 words of extra memory for PDF output out of 10000 (max. 10000000)
 
