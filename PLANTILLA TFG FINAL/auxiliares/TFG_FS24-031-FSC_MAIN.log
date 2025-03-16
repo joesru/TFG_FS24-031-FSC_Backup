@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.3.7)  16 MAR 2025 16:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.3.7)  16 MAR 2025 16:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1417,15 +1417,21 @@ LaTeX Info: Redefining \% on input line 1.
 
  (1.0.- TEORIA.tex
 Cap\'{\i }tulo 1.
-(1.1.- Que es el DFT.tex) (1.2.- Aproximacion Thomas-Fermi.tex)
-(1.3.- Teoremas de Hoohenberg-Kohn.tex
+(1.1.- Que es el DFT.tex
 
 [4
 
 
-]) (1.4.- Ecuaciones de Kohn-Sham.tex) (1.5.- Funcionales de la densidad.tex))
+]
 
-[5]
+LaTeX Warning: Command \guillemotright invalid in math mode on input line 28.
+
+) (1.2.- Aproximacion Thomas-Fermi.tex) (1.3.- Teoremas de Hoohenberg-Kohn.tex)
+(1.4.- Ecuaciones de Kohn-Sham.tex
+
+[5]) (1.5.- Funcionales de la densidad.tex))
+
+[6]
 (D:\00000000.- REDACCION TFG\PLANTILLA TFG FINAL\auxiliares\TFG_FS24-031-FSC_MA
 IN.aux
 LaTeX Info: Redefining \. on input line 13.
@@ -1440,35 +1446,40 @@ Package rerunfilecheck Info: File `TFG_FS24-031-FSC_MAIN.out' has not changed.
 (rerunfilecheck)             Checksum: 37289215A86DC7A8120897E499070BC4;1762.
  ) 
 Here is how much of TeX's memory you used:
- 31757 strings out of 473644
- 585222 string characters out of 5717516
- 1077164 words of memory out of 5000000
- 54170 multiletter control sequences out of 15000+600000
+ 31768 strings out of 473644
+ 585387 string characters out of 5717516
+ 1081164 words of memory out of 5000000
+ 54179 multiletter control sequences out of 15000+600000
  576183 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,12n,96p,1049b,524s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/josee/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmbx12.pfb><C:/Users/josee/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmmi12.pfb><C:/Users/josee/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmmi8.pfb><C:/Users/josee/AppData/Local/Programs/MiKTeX/fonts
-/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/josee/AppData/Local/Programs/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/josee/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/cm-super/sfbx1200.pfb><C:/Users/josee/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/public/cm-super/sfbx1440.pfb><C:/Users/josee/AppD
-ata/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1095.pfb><C:/Users/jo
-see/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1200.pfb><C:/
-Users/josee/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1440.
+fonts/cm/cmex10.pfb><C:/Users/josee/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmmi12.pfb><C:/Users/josee/AppData/Local/Programs/MiKTeX/font
+s/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/josee/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/josee/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/josee/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/josee/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/
+josee/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.
 pfb><C:/Users/josee/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/s
-frm1728.pfb><C:/Users/josee/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm
--super/sfrm2488.pfb><C:/Users/josee/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/cm-super/sfsx1728.pfb><C:/Users/josee/AppData/Local/Programs/MiKTeX/fonts
-/type1/public/cm-super/sfsx2488.pfb><C:/Users/josee/AppData/Local/Programs/MiKT
-eX/fonts/type1/public/cm-super/sfxc1200.pfb><C:/Users/josee/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/public/cm-super/sfxc1440.pfb>
+fbx1200.pfb><C:/Users/josee/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm
+-super/sfbx1440.pfb><C:/Users/josee/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/cm-super/sfrm1095.pfb><C:/Users/josee/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/cm-super/sfrm1200.pfb><C:/Users/josee/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/cm-super/sfrm1440.pfb><C:/Users/josee/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/cm-super/sfrm1728.pfb><C:/Users/josee/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm2488.pfb><C:/Users/josee/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfsx1728.pfb><C:/Users/j
+osee/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfsx2488.pfb><C:
+/Users/josee/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfxc1200
+.pfb><C:/Users/josee/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/
+sfxc1440.pfb>
 Output written on "D:\00000000.- REDACCION TFG\PLANTILLA TFG FINAL\auxiliares\T
-FG_FS24-031-FSC_MAIN.pdf" (6 pages, 296703 bytes).
+FG_FS24-031-FSC_MAIN.pdf" (7 pages, 335844 bytes).
 PDF statistics:
- 189 PDF objects out of 1000 (max. 8388607)
- 17 named destinations out of 1000 (max. 500000)
+ 217 PDF objects out of 1000 (max. 8388607)
+ 19 named destinations out of 1000 (max. 500000)
  111 words of extra memory for PDF output out of 10000 (max. 10000000)
 
