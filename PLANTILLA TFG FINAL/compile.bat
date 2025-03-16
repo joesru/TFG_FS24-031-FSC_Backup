@@ -19,7 +19,7 @@ pdflatex -interaction=nonstopmode -output-directory="auxiliares" "TFG_FS24-031-F
 
 rem Copiar el PDF a la carpeta principal y a la carpeta PDF con la fecha y hora
 copy /Y "auxiliares\TFG_FS24-031-FSC_MAIN.pdf" "TFG_FS24-031-FSC_MAIN.pdf"
-copy /Y "auxiliares\TFG_FS24-031-FSC_MAIN.pdf" "PDF\TFG_FS24-031-FSC_MAIN_%datetime%.pdf"
+copy /Y "auxiliares\TFG_FS24-031-FSC_MAIN.pdf" "PDF\TFG_FS24-031-FSC_%datetime%.pdf"
 
 rem ==============================
 rem  Guardar Historial de .tex y .sty
