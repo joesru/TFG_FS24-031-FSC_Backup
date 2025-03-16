@@ -33,7 +33,7 @@ for /f %%A in ('dir /b /ad ^| find /c /v ""') do set folder_count=%%A
 
 rem Si hay 10 o más carpetas, borrar la más antigua
 if %folder_count% GEQ 10 (
-    for /f "delims=" %%F in ('dir /b /ad /o-d') do (
+    for /f "delims=" %%F in ('dir /b /ad /o:n') do (
         rmdir /s /q "%%F"
         goto :break
     )
