@@ -77,7 +77,7 @@ rem Asegurar que Git reconoce los cambios eliminando archivos eliminados
 git add -A
 
 rem Crear el commit con un mensaje automático
-git commit -m "Backup automático - %datetime%"
+git commit -m "Backup automatico - %datetime%"
 
 rem Intentar subir los cambios a GitHub
 git push origin main
@@ -87,5 +87,5 @@ if %errorlevel% neq 0 (
     echo No hay conexión a Internet. Los cambios se guardarán localmente y se subirán más tarde.
 )
 
-echo ✅ Respaldo completado y cambios subidos a GitHub: %datetime%
+echo Respaldo completado y cambios subidos a GitHub: %datetime%
 pause
