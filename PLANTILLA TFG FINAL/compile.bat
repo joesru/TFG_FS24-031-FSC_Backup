@@ -10,7 +10,7 @@ if not exist "%HISTORIAL_FOLDER%" mkdir "%HISTORIAL_FOLDER%"
 
 rem Obtener la fecha y hora actual en formato YYYY_MM_DD_HH-mm-ss
 for /f "tokens=2 delims==." %%I in ('wmic os get localdatetime /value ^| find "="') do set datetime=%%I
-set datetime=%datetime:~0,4%_%datetime:~4,2%_%datetime:~6,2%-%datetime:~8,2%-%datetime:~10,2%-%datetime:~12,2%
+set datetime=%datetime:~0,4%_%datetime:~4,2%_%datetime:~6,2%--%datetime:~8,2%-%datetime:~10,2%-%datetime:~12,2%
 
 
 rem Compilar el documento LaTeX
