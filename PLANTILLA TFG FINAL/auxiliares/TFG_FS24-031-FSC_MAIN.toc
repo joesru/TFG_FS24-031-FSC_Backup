@@ -1,14 +1,9 @@
 \babel@toc {spanish}{}\relax 
 \contentsline {chapter}{Índice general}{1}{chapter*.1}%
 \contentsline {chapter}{Índice de figuras}{2}{chapter*.2}%
-\contentsline {chapter}{Índice de figuras}{2}{chapter*.2}%
 \contentsline {chapter}{\'{I}ndice de tablas}{3}{chapter*.3}%
-\contentsline {chapter}{Índice de tablas}{3}{chapter*.3}%
 \contentsline {chapter}{\numberline {1}TEORIA}{4}{chapter.1}%
-\contentsline {section}{\numberline {1.1}¿Qué es el DFT?}{4}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1.1}Definición}{4}{subsection.1.1.1}%
-\contentsline {subsection}{\numberline {1.1.2}Problema con la ecuación de Schrödinger}{4}{subsection.1.1.2}%
-\contentsline {section}{\numberline {1.2}Aproximación de Thomas-Fermi}{4}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Teoremas de Hoohenberg-Kohn}{4}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Ecuaciones de Kohn-Sham}{4}{section.1.4}%
-\contentsline {section}{\numberline {1.5}Funcionales de la Densidad}{4}{section.1.5}%
+\contentsline {section}{\numberline {1.1}Aproximación de Thomas-Fermi}{4}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Teoremas de Hoohenberg-Kohn}{4}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Ecuaciones de Kohn-Sham}{4}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Funcionales de la Densidad}{4}{section.1.4}%
