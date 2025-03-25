@@ -8,5 +8,5 @@
 \contentsline {subsection}{\numberline {1.1.2}Problema con la ecuación de Schrödinger y motivación}{4}{subsection.1.1.2}%
 \contentsline {section}{\numberline {1.2}Aproximación de Thomas-Fermi}{6}{section.1.2}%
 \contentsline {section}{\numberline {1.3}Teoremas de Hohenberg-Kohn}{7}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Ecuaciones de Kohn-Sham}{7}{section.1.4}%
-\contentsline {section}{\numberline {1.5}Funcionales de la densidad}{7}{section.1.5}%
+\contentsline {section}{\numberline {1.4}Ecuaciones de Kohn-Sham}{8}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Funcionales de la densidad}{8}{section.1.5}%

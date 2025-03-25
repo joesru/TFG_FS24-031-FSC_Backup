@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.3.7)  25 MAR 2025 18:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.3.7)  25 MAR 2025 19:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1205,9 +1205,42 @@ LaTeX Info: Redefining \datespanish on input line 85.
 LaTeX Info: Redefining \today on input line 736.
 \dt@a=\toks59
 \dt@b=\toks60
-)) (C:\Users\josee\AppData\Local\Programs\MiKTeX\tex/latex/bigints\bigints.sty
+) (C:\Users\josee\AppData\Local\Programs\MiKTeX\tex/latex/bigints\bigints.sty
 Package: bigints 2010/02/15 Writing big integrals
 Package bigints Info: This is Bigints by Merciadri Luca. on input line 5.
+)
+(C:\Users\josee\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcolorbox.sty
+Package: tcolorbox 2024/10/22 version 6.4.1 text color boxes
+(C:\Users\josee\AppData\Local\Programs\MiKTeX\tex/latex/environ\environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+)
+\tcb@titlebox=\box128
+\tcb@upperbox=\box129
+\tcb@lowerbox=\box130
+\tcb@phantombox=\box131
+\c@tcbbreakpart=\count405
+\c@tcblayer=\count406
+\c@tcolorbox@number=\count407
+\l__tcobox_tmpa_box=\box132
+\l__tcobox_tmpa_dim=\dimen336
+\tcb@temp=\box133
+\tcb@temp=\box134
+\tcb@temp=\box135
+\tcb@temp=\box136
+)
+(C:\Users\josee\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbtheorems.c
+ode.tex
+Library (tcolorbox): 'tcbtheorems.code.tex' version '6.4.1'
+)
+\c@tcb@cnt@mytheo=\count408
+\c@tcb@cnt@mydef=\count409
+\c@tcb@cnt@myalg=\count410
+\c@tcb@cnt@myex=\count411
+\c@tcb@cnt@mylemma=\count412
+\c@tcb@cnt@myremark=\count413
+\c@tcb@cnt@myexercise=\count414
+\c@tcb@cnt@myprop=\count415
+\c@tcb@cnt@myproof=\count416
 )
 (D:\00000000.- REDACCION TFG\PLANTILLA TFG FINAL\auxiliares\TFG_FS24-031-FSC_MA
 IN.aux
@@ -1253,16 +1286,16 @@ Package chemgreek Info: Activating mapping `upgreek' on line 60.
 (C:\Users\josee\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count405
-\scratchdimen=\dimen336
-\scratchbox=\box128
-\nofMPsegments=\count406
-\nofMParguments=\count407
+\scratchcounter=\count417
+\scratchdimen=\dimen337
+\scratchbox=\box137
+\nofMPsegments=\count418
+\nofMParguments=\count419
 \everyMPshowfont=\toks61
-\MPscratchCnt=\count408
-\MPscratchDim=\dimen337
-\MPnumerator=\count409
-\makeMPintoPDFobject=\count410
+\MPscratchCnt=\count420
+\MPscratchDim=\dimen338
+\MPnumerator=\count421
+\makeMPintoPDFobject=\count422
 \everyMPtoPDFconversion=\toks62
 )
 (C:\Users\josee\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
@@ -1309,7 +1342,7 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count411
+\c@lstlisting=\count423
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
@@ -1413,12 +1446,13 @@ Cap\'{\i }tulo 1.
 
 ]) (1.2.- Aproximacion Thomas-Fermi.tex
 
-[5]) (1.3.- Teoremas de Hoohenberg-Kohn.tex) (1.4.- Ecuaciones de Kohn-Sham.tex
+[5]) (1.3.- Teoremas de Hoohenberg-Kohn.tex
 
+[6]) (1.4.- Ecuaciones de Kohn-Sham.tex) (1.5.- Funcionales de la densidad.tex
 
-[6]) (1.5.- Funcionales de la densidad.tex))
+[7]))
 
-[7]
+[8]
 (D:\00000000.- REDACCION TFG\PLANTILLA TFG FINAL\auxiliares\TFG_FS24-031-FSC_MA
 IN.aux
 LaTeX Info: Redefining \. on input line 13.
@@ -1433,13 +1467,13 @@ Package rerunfilecheck Info: File `TFG_FS24-031-FSC_MAIN.out' has not changed.
 (rerunfilecheck)             Checksum: 1C55329F1793E1A8BC9257AF76AA2AB1;1978.
  ) 
 Here is how much of TeX's memory you used:
- 31835 strings out of 473644
- 586251 string characters out of 5717516
- 1083164 words of memory out of 5000000
- 54235 multiletter control sequences out of 15000+600000
+ 34283 strings out of 473644
+ 650455 string characters out of 5717516
+ 1094154 words of memory out of 5000000
+ 56668 multiletter control sequences out of 15000+600000
  578412 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,12n,96p,1097b,524s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,12n,96p,1097b,705s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/josee/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmbx12.pfb><C:/Users/josee/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmex10.pfb><C:/Users/josee/AppData/Local/Programs/MiKTeX/fonts/type1/p
@@ -1466,9 +1500,9 @@ sfsx2488.pfb><C:/Users/josee/AppData/Local/Programs/MiKTeX/fonts/type1/public/c
 m-super/sfxc1200.pfb><C:/Users/josee/AppData/Local/Programs/MiKTeX/fonts/type1/
 public/cm-super/sfxc1440.pfb>
 Output written on "D:\00000000.- REDACCION TFG\PLANTILLA TFG FINAL\auxiliares\T
-FG_FS24-031-FSC_MAIN.pdf" (8 pages, 402791 bytes).
+FG_FS24-031-FSC_MAIN.pdf" (9 pages, 410322 bytes).
 PDF statistics:
- 239 PDF objects out of 1000 (max. 8388607)
- 27 named destinations out of 1000 (max. 500000)
+ 247 PDF objects out of 1000 (max. 8388607)
+ 31 named destinations out of 1000 (max. 500000)
  111 words of extra memory for PDF output out of 10000 (max. 10000000)
 
