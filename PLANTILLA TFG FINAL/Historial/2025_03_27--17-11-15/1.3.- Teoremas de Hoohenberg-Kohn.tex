@@ -1,0 +1,47 @@
+\section{Teoremas de Hohenberg-Kohn}
+
+El objetivo de Hohenberg y Kohn era el de formular la teoría del funcional de la densidad como una teoría exacta para sistemas de muchos cuerpos. Esta formulación se aplica para cualquier sistema de partículas interactuantes en un potencial externo $V_{\text{ext}}$ y los núcleos de los átomos fijos, de tal forma que el hamiltoniano asociado es el siguiente:
+
+\begin{equation}
+    \hat{H} = - \frac{\hbar^2}{2 m_{e}} \sum_i \nabla_{i}^2 + \sum_i V_{\text{ext}}  \left( \va{r}_i  \right)  + \frac{1}{2} \sum_{i \neq j} \frac{e^2}{\abs{ \va{r}_i - \va{r}_j} }
+\end{equation}
+
+La teoría del funcional de la densidad se basa en dos teoremas principales, propuestos por Hohenberg y Kohn:
+
+\begin{mytheo}{Teorema de Hohenberg-Kohn I}{}
+    Para cualquier sistema de partículas interactuantes sometidas a un potencial externo $V_{\text{ext}}$ , este potencial queda determinado de forma única, excepto una constante, por la densidad electrónica del estado fundamental $n_0 \left( \va{r} \right)$ .
+\end{mytheo}
+
+\begin{mytheo}{Teorema de Hohenberg-Kohn II}{}
+    Un funcional universal para la energía $E \left[ n \right]$ en términos de la densidad puede ser definido, válido para cualquier potencial externo $V_{\text{ext}}$ . Para un  $V_{\text{ext}}$ particular , la energía exacta del estado fundamental del sistema es el valor mínimo global de este funcional, y la densidad $n \left( \va{r} \right)$ que minimiza el funcional es exactamente la densidad del estado fundamental $n_0 \left( \va{r} \right)$.
+\end{mytheo}
+
+
+Este teorema lo podemos ver de forma esquemática tal y como sigue:
+
+\begin{equation}
+\begin{array}{ccc}
+   & \text{HK} & \\
+   V_{\text{ext}}(\va{r}) 
+     & \Longleftarrow 
+     & n_0(\va{r}) \\
+   \Downarrow 
+     & 
+     & \Uparrow \\
+   \psi_i\bigl(\{\va{r}\}\bigr) 
+     & \Rightarrow 
+     & \psi_0\bigl(\{\va{r}\}\bigr)
+\end{array}
+\end{equation}
+
+En la parte de la izquierda, con el potencial externo al resolver la ecuación de Schrödinger tenemos todos los estados del sistema, es lo que venimos haciendo de siempre. A partir de estos estados podemos obtener el del estado fundamental y con él la densidad electrónica asociada a ese estado. Una vez tenemos esta densidad del estado fundamental, haciendo uso del teorema de Hohenberg-Kohn podemos ``redefinir'' el potencial externo y volver a empezar el ciclo.
+
+Así mismo a cada uno de estos teoremas tienen asociados un colorario.
+
+\begin{mycoro}{Teorema de Hohenberg-Kohn I}{}
+    Dado que el Hamiltoniano queda así completamente determinado, excepto por un desplazamiento constante de la energía, todas las propiedades del sistema se encuentran completamente determinadas con solo conocer la densidad del estado fundamental $n_0 \left( \va{r} \right)$.
+\end{mycoro}
+
+\begin{mycoro}{Teorema de Hohenberg-Kohn II}{}
+    El funcional $E \left[ n \right]$ por sí solo es suficiente para determinar la energía y la densidad exactas del estado fundamental. En general, los estados excitados de los electrones deben determinarse por otros medios.
+\end{mycoro}
