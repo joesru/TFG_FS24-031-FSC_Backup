@@ -25,7 +25,7 @@ siendo en este caso \begin{equation}
 Por lo que considerando tanto el potencial externo al que están sometidos los electrones y la energía electrostática de Hartree, el funcional de la energía nos quedaría de la siguiente manera:
 
 \begin{equation}
-    E_{\text{TF}} \left[ n \right] = C_1 \int n^{5/3} \left( \va{r} \right) \dd{\va{r}} + C_2 \int n^{4/3} \left( \va{r} \right) \dd{\va{r}} + \int V_{\text{ext}} \left( \va{r} \right) n \left( \va{r} \right) \dd{\va{r}}  + \frac{1}{2} \int \frac{n \left( \va{r} \right) n \left( \va{r'} \right)}{\abs{ \va{r} - \va{r'} } } \dd{\va{r}} \dd{\va{r'}}
+    E_{\text{TF}} \left[ n \right] = F_{\text{ni}}\left[ n \left( \va{r} \right) \right] + F_{\text{xc}}\left[ n \left( \va{r} \right) \right] + \int V_{\text{ext}} \left( \va{r} \right) n \left( \va{r} \right) \dd{\va{r}}  + \frac{1}{2} \int \frac{n \left( \va{r} \right) n \left( \va{r'} \right)}{\abs{ \va{r} - \va{r'} } } \dd{\va{r}} \dd{\va{r'}}
 \end{equation}
 
 A su vez todo esto queda restringido por la siguiente ligadura en la que al integrar en todo el espacio la densidad electrónica tenemos como resultado el número de electrones del sistema.
@@ -33,4 +33,3 @@ A su vez todo esto queda restringido por la siguiente ligadura en la que al inte
 \begin{equation}
     N = \int n \left( \va{r} \right)  \dd{\va{r}}
 \end{equation}
-
