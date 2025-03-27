@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.3.7)  27 MAR 2025 17:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.3.7)  27 MAR 2025 18:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1468,8 +1468,8 @@ Package rerunfilecheck Info: File `TFG_FS24-031-FSC_MAIN.out' has not changed.
 (rerunfilecheck)             Checksum: 1C55329F1793E1A8BC9257AF76AA2AB1;1978.
  ) 
 Here is how much of TeX's memory you used:
- 34288 strings out of 473644
- 650553 string characters out of 5717516
+ 34289 strings out of 473644
+ 650566 string characters out of 5717516
  1094158 words of memory out of 5000000
  56670 multiletter control sequences out of 15000+600000
  578412 words of font info for 81 fonts, out of 8000000 for 9000
@@ -1501,9 +1501,9 @@ sfsx2488.pfb><C:/Users/josee/AppData/Local/Programs/MiKTeX/fonts/type1/public/c
 m-super/sfxc1200.pfb><C:/Users/josee/AppData/Local/Programs/MiKTeX/fonts/type1/
 public/cm-super/sfxc1440.pfb>
 Output written on "D:\00000000.- REDACCION TFG\PLANTILLA TFG FINAL\auxiliares\T
-FG_FS24-031-FSC_MAIN.pdf" (9 pages, 412710 bytes).
+FG_FS24-031-FSC_MAIN.pdf" (9 pages, 413680 bytes).
 PDF statistics:
- 250 PDF objects out of 1000 (max. 8388607)
- 34 named destinations out of 1000 (max. 500000)
+ 251 PDF objects out of 1000 (max. 8388607)
+ 35 named destinations out of 1000 (max. 500000)
  111 words of extra memory for PDF output out of 10000 (max. 10000000)
 
