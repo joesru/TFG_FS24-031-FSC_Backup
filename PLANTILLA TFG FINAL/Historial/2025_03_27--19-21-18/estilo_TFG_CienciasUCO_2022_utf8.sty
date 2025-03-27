@@ -282,3 +282,36 @@ keepaspectratio]{img/fondo_portada.png}%
 \usepackage[spanish]{datetime}
 \newcommand{\textbfit}[1]{\textbf{\textit{#1}}}
 \usepackage{bigints}
+
+\usepackage{tcolorbox}
+\tcbuselibrary{theorems}
+
+\newtcbtheorem[number within=section]{mytheo}{Teorema}%
+{colback=green!5,colframe=green!35!black,fonttitle=\bfseries}{th}
+
+\newtcbtheorem[number within=section]{mydef}{Definición}%
+{colback=blue!5,colframe=blue!35!black,fonttitle=\bfseries}{th}
+
+\newtcbtheorem[number within=section]{myalg}{Algoritmo}%
+{colback=cyan!5,colframe=cyan!35!black,fonttitle=\bfseries}{th}
+
+\newtcbtheorem[number within=section]{myex}{Ejemplo}%
+{colback=gray!5,colframe=gray!35!black,fonttitle=\bfseries}{th}
+
+
+\newtcbtheorem[number within=section]{mycoro}{Corolario}%
+{colback=lime!5,colframe=lime!35!black,fonttitle=\bfseries}{th}
+
+\newtcbtheorem[number within=section]{myremark}{Remark}%
+{colback=red!5,colframe=red!35!black,fonttitle=\bfseries}{th}
+
+
+\newtcbtheorem[number within=section]{myexercise}{Ejercicio}%
+{colback=cyan!5,colframe=cyan!35!black,fonttitle=\bfseries}{th}
+
+
+\newtcbtheorem[number within=section]{myprop}{Proposicion}%
+{colback=olive!5,colframe=olive!35!black,fonttitle=\bfseries}{th}
+
+\newtcbtheorem[number within=section]{myproof}{Prueba}%
+{colback=teal!5,colframe=teal!35!black,fonttitle=\bfseries}{th}
